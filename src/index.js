@@ -1,19 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-
-import "./index.scss";
-import CitiesList from "./components/CitiesList/CitiesList";
-import YMaps from "./components/YMaps/YMaps";
-
-const App = () => {
-  return (
-    <React.Fragment>
-      <CitiesList />
-      <YMaps />
-    </React.Fragment>
-  );
-};
 
 ReactDOM.render(
   <React.StrictMode>

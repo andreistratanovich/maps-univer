@@ -2,51 +2,33 @@ import React from "react";
 import { YMaps, Map, GeoObject } from "react-yandex-maps";
 import "./YMaps.scss";
 
-export default () => (
-  <YMaps>
-    <Map className="maps-container" defaultState={{ center: [55.75, 37.57], zoom: 9 }}>
+export default (props) => {
+  const routes = [];
+
+  for (let i = 1; i < props.data.length; i++) {
+    routes.push(
       <GeoObject
         geometry={{
           type: "LineString",
           coordinates: [
-            [55.76, 37.64],
-            [52.51, 13.38],
+            [props.data[i - 1].lat, props.data[i - 1].lon],
+            [props.data[i].lat, props.data[i].lon],
           ],
         }}
         options={{
           geodesic: true,
           strokeWidth: 3,
-          strokeColor: "#007AFF",
+          strokeColor: "#1890ff",
         }}
       />
-      <GeoObject
-        geometry={{
-          type: "LineString",
-          coordinates: [
-            [52.51, 13.38],
-            [53.910402, 27.560451],
-          ],
-        }}
-        options={{
-          geodesic: true,
-          strokeWidth: 3,
-          strokeColor: "#007AFF",
-        }}
-      />
-      <GeoObject
-        geometry={{
-          type: "LineString",
-          coordinates: [
-            [53.910402, 27.560451],
-            [59.325, 18.070897],
-          ],
-        }}
-        options={{
-          geodesic: true,
-          strokeWidth: 3,
-          strokeColor: "#007AFF",
-        }}
-      />
-    </Map>
-  </YMaps>
-);
+    );
+  }
+
+  return (
+    <YMaps query={{ lang: "en_RU" }}>
+      <Map className="maps-container" defaultState={{ center: [47.57, 21.1], zoom: 5 }}>
+        {routes}
+      </Map>
+    </YMaps>
+  );
+};
