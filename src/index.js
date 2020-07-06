@@ -1,31 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
-import { YMaps, Map, GeoObject } from "react-yandex-maps";
 
 import "./index.scss";
+import CitiesList from "./components/CitiesList/CitiesList";
+import YMaps from "./components/YMaps/YMaps";
 
 const App = () => {
   return (
     <React.Fragment>
-      <YMaps>
-        <Map className="maps-container" defaultState={{ center: [55.75, 37.57], zoom: 9 }}>
-          <GeoObject
-            geometry={{
-              type: "LineString",
-              coordinates: [
-                [55.76, 37.64],
-                [52.51, 13.38],
-              ],
-            }}
-            options={{
-              geodesic: true,
-              strokeWidth: 3,
-              strokeColor: "#000",
-            }}
-          />
-        </Map>
-      </YMaps>
+      <CitiesList />
+      <YMaps />
     </React.Fragment>
   );
 };
