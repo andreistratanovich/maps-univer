@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/maps-univer/static/css/main.d07f5ca7.chunk.css",
+    "main.js": "/maps-univer/static/js/main.2df7ac7f.chunk.js",
+    "main.js.map": "/maps-univer/static/js/main.2df7ac7f.chunk.js.map",
+    "runtime-main.js": "/maps-univer/static/js/runtime-main.8bbce123.js",
+    "runtime-main.js.map": "/maps-univer/static/js/runtime-main.8bbce123.js.map",
+    "static/css/2.9edc93b8.chunk.css": "/maps-univer/static/css/2.9edc93b8.chunk.css",
+    "static/js/2.5105db2e.chunk.js": "/maps-univer/static/js/2.5105db2e.chunk.js",
+    "static/js/2.5105db2e.chunk.js.map": "/maps-univer/static/js/2.5105db2e.chunk.js.map",
+    "index.html": "/maps-univer/index.html",
+    "precache-manifest.043a39783fcaf2de3a6d1a6d65f9e5eb.js": "/maps-univer/precache-manifest.043a39783fcaf2de3a6d1a6d65f9e5eb.js",
+    "service-worker.js": "/maps-univer/service-worker.js",
+    "static/css/2.9edc93b8.chunk.css.map": "/maps-univer/static/css/2.9edc93b8.chunk.css.map",
+    "static/css/main.d07f5ca7.chunk.css.map": "/maps-univer/static/css/main.d07f5ca7.chunk.css.map",
+    "static/js/2.5105db2e.chunk.js.LICENSE.txt": "/maps-univer/static/js/2.5105db2e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8bbce123.js",
+    "static/css/2.9edc93b8.chunk.css",
+    "static/js/2.5105db2e.chunk.js",
+    "static/css/main.d07f5ca7.chunk.css",
+    "static/js/main.2df7ac7f.chunk.js"
+  ]
+}
