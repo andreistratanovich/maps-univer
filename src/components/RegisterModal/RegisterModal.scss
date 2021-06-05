@@ -1,0 +1,32 @@
+.register-modal__container {
+  display: flex;
+
+  .register-modal__column {
+    flex: 1;
+
+    &:first-child {
+      margin-right: 30px
+    }
+
+    .register-modal__row {
+      display: flex;
+
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+
+      .register-modal__section {
+        flex: 1;
+
+        &:not(:first-child) {
+          margin-left: 30px;
+        }
+
+        .register-modal__small-text {
+          margin-top: 7px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

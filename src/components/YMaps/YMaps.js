@@ -11,8 +11,8 @@ export default (props) => {
         geometry={{
           type: "LineString",
           coordinates: [
-            [props.data[i - 1].lat, props.data[i - 1].lon],
-            [props.data[i].lat, props.data[i].lon],
+            [props.data[i - 1].airport.lat, props.data[i - 1].airport.lon],
+            [props.data[i].airport.lat, props.data[i].airport.lon],
           ],
         }}
         options={{
